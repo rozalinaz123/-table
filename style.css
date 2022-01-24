@@ -1,0 +1,48 @@
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 5px;
+    background: rgb(233, 252, 182);
+}
+.header{
+    min-height: 100px;
+    background: rgb(142, 80, 204);
+    margin: 1%;
+}
+.left{
+    width: 30%;
+    background: rgb(115, 133, 231);
+    min-height: 200px;
+    float: left;
+    margin: 1%;
+}
+.right{
+    width: 66%;
+    background: rgb(247, 85, 85);
+    min-height: 200px;
+    float: left;
+    margin: 1%;
+}
+.wrap::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+@media screen and (max-width:600px) {
+    .left{
+        width: 48%;
+    }
+    .right{
+        width:48%;
+    }
+}
+@media screen and (max-width:350px){
+    .left{
+        width: 98%;
+    }
+    .right{
+        width: 98%;
+    }
+    
+}
